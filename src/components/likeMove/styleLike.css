@@ -1,0 +1,162 @@
+/* @import url(../../../pic/heart.png); */
+
+.like-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 250px;
+  width: 250px;
+  border: 2px solid #ddd;
+  margin: auto;
+}
+
+.btn-like {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.btn-like:hover {
+  border: 2px solid #ddd;
+}
+
+.img {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 50px;
+}
+
+.move1 {
+  animation: move-heart1 500ms ease-out forwards;
+}
+
+.move2 {
+  animation: move-heart2 500ms ease-out forwards;
+}
+
+.move3 {
+  animation: move-heart3 500ms ease-out forwards;
+}
+
+.move4 {
+  animation: move-heart4 500ms ease-out forwards;
+}
+
+@keyframes move-heart1 {
+
+  from {
+    transform: translate(0px, 0px);
+  }
+
+  25% {
+    transform: translate(-50px, -50px);
+    opacity: 0.75;
+  }
+
+  50% {
+    transform: translate(0px, -100px);
+    opacity: 0.5;
+  }
+
+  75% {
+    transform: translate(50px, -150px);
+    opacity: 0.25;
+  }
+
+  to {
+    transform: translate(0px, -200px);
+    opacity: 0;
+  }
+
+}
+
+@keyframes move-heart2 {
+
+  from {
+    transform: translate(0px, 0px);
+  }
+
+  25% {
+    transform: translate(0px, -50px);
+    opacity: 0.75;
+  }
+
+  50% {
+    transform: translate(50px, -100px);
+    opacity: 0.5;
+  }
+
+  75% {
+    transform: translate(-50px, -150px);
+    opacity: 0.25;
+  }
+
+  to {
+    transform: translate(0px, -200px);
+    opacity: 0;
+  }
+
+}
+
+@keyframes move-heart3 {
+
+  from {
+    transform: translate(0px, 0px);
+  }
+
+  25% {
+    transform: translate(0px, -50px);
+    opacity: 0.75;
+  }
+
+  50% {
+    transform: translate(-50px, -100px);
+    opacity: 0.5;
+  }
+
+  75% {
+    transform: translate(50px, -150px);
+    opacity: 0.25;
+  }
+
+  to {
+    transform: translate(0px, -200px);
+    opacity: 0;
+  }
+
+}
+
+@keyframes move-heart4 {
+
+  from {
+    transform: translate(0px, 0px);
+  }
+
+  25% {
+    transform: translate(50px, -50px);
+    opacity: 0.75;
+  }
+
+  50% {
+    transform: translate(0px, -100px);
+    opacity: 0.5;
+  }
+
+  75% {
+    transform: translate(-50px, -150px);
+    opacity: 0.25;
+  }
+
+  to {
+    transform: translate(0px, -200px);
+    opacity: 0;
+  }
+
+}

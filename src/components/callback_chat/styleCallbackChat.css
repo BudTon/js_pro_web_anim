@@ -1,0 +1,141 @@
+.callback-chat {
+  height: 75px;
+  width: 75px;
+  background-color: crimson;
+  border-radius: 50%;
+  margin-left: auto;
+}
+
+.callback-chat:hover {
+  cursor: pointer;
+  animation: point 100ms linear forwards;
+}
+
+@keyframes point {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.25);
+  }
+}
+
+.widget-create-form {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 5;
+}
+
+.popup {
+  animation-name: popup;
+  animation-duration: 1s;
+  animation-iteration-count:1;
+}
+
+@keyframes popup {
+  from {
+    transform: matrix(0, 0, 0, 0, 0, 0);
+  }
+    1% {
+      transform: matrix(0.1, 0, 0, 0.1, 0, 0);
+    }
+  
+    /* 50% {
+      transform: matrix(0.5, 0, 0, 0.5, 0, 0);
+    } */
+  to {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+}
+
+.shadow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shadow::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(29, 29, 29, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 6;
+}
+
+.title-box {
+  display: flex;
+}
+
+.close-icon {
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  color: black;
+  margin-left: auto;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+.title-description {
+  display: flex;
+  align-items: start;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  justify-content: start;
+}
+
+.create-form {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  min-height: 40%;
+  text-align: center;
+  margin: auto;
+  background: #fff;
+  border: #000 solid 2px;
+  padding: 30px;
+  border-radius: 10px 10px;
+  z-index: 7;
+}
+
+.input-textarea {
+  min-height: 200px;
+  min-width: 100%;
+}
+
+.button-box {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.btn-widget {
+  width: 100%;
+  border-radius: 10px 10px;
+  background-color: #fff;
+  font-size: 1em;
+  padding: 10px 30px;
+  margin: 4vh 1vh 0 1vh;
+}
+
+.btn-widget:hover {
+  background-color: #0be00e;
+}
+
+.hidden {
+  display: none;
+}

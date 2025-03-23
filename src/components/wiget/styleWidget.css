@@ -1,0 +1,26 @@
+.container-task {
+  padding: 50px;
+}
+
+.task-collapse,
+.task-callback-chat,
+.task-liker {
+  display: flex;
+  width: 300px;
+  height: 30px;
+  margin: auto;
+}
+
+.task {
+  width: 90%;
+  text-align: start;
+}
+
+.btn-collapse,
+.btn-callback-chat,
+.btn-liker {
+  height: 30px;
+  width: 30px;
+  margin: auto;
+  cursor: pointer;
+}
