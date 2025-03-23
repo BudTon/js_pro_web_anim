@@ -12,6 +12,10 @@
 
 ---
 
+![CI](https://github.com/BudTon/js_pro_web_anim/actions/workflows/web.yml/badge.svg)
+
+[GitHub Pages](https://budton.github.io/js_pro_web_anim/)
+
 ### Collapse
 
 #### Легенда
